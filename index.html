@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <title>RK</title> 
+<style>
+
+h1{
+   background-color:red;
+   border:2px solid green;
+   padding:5px;
+   font-size:200%;
+   text-align:center;
+   color:white;
+     
+  }
+h1:hover{
+           color:yellow;
+           background-color:green;
+
+         }
+<!-- unnecessary -->
+
+body{
+     background-image:url("me.jpg"); 
+     background-repeat:repeat;
+     background-size:20% 20%;
+    }
+
+table{
+     font-family:arial;
+     border-collapse:collapse;
+     width:50%;
+     
+     }
+
+th,td{
+     border:2px solid black;
+     text-align:left;
+     padding:10px;
+     
+     }
+tr:nth-child(odd){
+                  background-color:yellow;
+                 }
+dt{
+   color:green;
+   font-family:arial;
+  }
+dt:hover{
+          color:blue;     
+         }
+
+
+
+</style>
 </head>
 <body>
-<h1>Begining of new me</h1>
-<p>Hellow coding!!!</p>
+<h1 title="biography" >Begining of new me</h1>
+<p style="color:red" id="r1">Hellow coding!!!</p>
+<a href="https://www.w3schools.com/html/html_basic.asp" title="tutorial" target="_blank">w3school </a>
+<a href="#r1">go to header </a>
+<img src="me.jpg"  height="100" width="100">
+
+<button onclick="document.location='https://www.w3schools.com/html/html_links.asp'">click here</button>
+<table>
+  <caption>Details</caption>
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Id</th>
+  </tr>
+  <tr>
+    <td>Rony</td>
+    <td>15103228</td>
+    <td>15103226</td>
+  </tr>
+  <tr>
+    <td>pony</td>
+    <td>15103229</td>
+    <td>15103227</td>
+  </tr>
+</table>
+<h2 style="color:blue">My hobbies:</h2>
+   <dl>
+     <dt>Sports</dt>
+     <dd>-Football,Cricket</dd>
+     <dt>Movie</dt>
+     <dd>-Action,Advanture,Comics</dd>
+   </dl>
+<h2 style="color:blue">Sign up</h2>
+<form method="post">
+<label for="love">First name</label><br>
+<input type="text" id="love" name="First Name" value="fname"><br>
+<label for="hate">Last name</label><br>
+<input type="text" id="hate" name="Last name" value="lname"><br>
+<label for="secreat">Password</label><br>
+<input type="password" id="secreat" name="password" required><br><br>
+<input type="submit" value="submit">
+</form><br><br>
+
+<form method="post">
+<fieldset>
+<legend>Favourite cars</legend>
+<input type="radio" id="love" name="vehical1" value="ferari">
+<label for="love">car</label><br>
+<input type="radio" id="hate" name="vehical2" value="z-fighter">
+<label for="hate">plan</label><br>
+<input type="radio" id="secreat" name="vehical3" value="speed-boat">
+<label for="secreat">boat</label><br><br>
+</fieldset><br>
+<input type="submit" value="Sign up"><br><br>
+
+</form>
+<form method="post">
+<label for="rk" style="color:green">Chose a hobby:</label><br><br>
+<select id="rk" name="Hobby" size="3">
+<option value="travel">Traveling</option>
+<option value="singing" selected>singing</option>
+<option value="playing">playing</option>
+<option value="swimming">swimming</option>
+</select><br><br>
+<input type="submit" value="submit">
+</form>
+
+
 
 </body>
+<script src="script.js"></script>
 </html>
